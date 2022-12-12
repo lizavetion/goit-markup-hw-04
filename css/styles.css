@@ -42,6 +42,7 @@ img{
     padding-right: 15px;
 
 }
+
 .visually_hidden {
     position: absolute;
     width: 1px;
@@ -80,6 +81,9 @@ h2{
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin: 0;
+}
+.flex{
+    display: flex;
 }
 
 
@@ -169,17 +173,22 @@ h2{
 }
 /* HERO */
 .hero{
-    background-color: var(--primaryColorNavyBlue);
+    /* background-color: var(--primaryColorNavyBlue); */
     padding-top: 192px;
     padding-bottom: 192px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg_office.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .hero_content{
     text-align: center;
     width: 520px;
 }
+    
 .hero_title{
     font-weight: 600;
     font-size: 56px;
@@ -253,6 +262,16 @@ h2{
     line-height: 1.5;
     letter-spacing: 0.015em;
     color: var(--primaryColorSlate);
+}
+.benefit_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--primaryColorCloud);
+    border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 /* SERVICE */
@@ -333,9 +352,85 @@ h2{
         text-align: center;
         letter-spacing: 0.02em;
         color: var(--primaryColorSlate);
+        margin-bottom: 8px;
         
 }
 
+.social_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_icon_item:not(:last-child){
+    margin-right: 24px;
+}
+.social_icon_item{
+    display: flex;
+        background-color: var(--primaryColorIris);
+        border-radius: 50%;
+        background-size: 40px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+}
+.social_icon_logo{
+    fill: var(--primaryColorCloud);
+}
+.a{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+/* CUSTOMERS */
+.customers_title{
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--primaryColorNavyBlue);
+        margin-bottom: 72px;
+}
+.customer_list{
+        display: flex;
+        justify-content: space-between;
+}
+.customer_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    fill: var(--primaryColorLightSlate);
+    width: 168px;
+    height: 88px;
+    border: 1px solid var(--primaryColorLightSlate);
+    border-radius: 4px;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+
+.customer_logo:hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        fill: var(--primaryColorIris);
+        width: 168px;
+        height: 88px;
+        border: 1px solid var(--primaryColorIris);
+        border-radius: 4px;
+        padding: 16px 32px;
+        cursor: pointer;
+
+}
 
 /* PROJECTS */
 .button {
@@ -416,6 +511,7 @@ h2{
 
 /* FOOTER */
 .footer {
+    display: flex;
     background: var(--primaryColorNavyBlue);
     padding-top: 100px;
     padding-bottom: 100px;
@@ -434,7 +530,9 @@ h2{
     text-decoration: none;
     margin-bottom: 16px;
     width: 115px;
+    padding: 0;
 }
+
 
 .first_logo {
     font-family: 'Raleway';
@@ -455,4 +553,28 @@ h2{
     letter-spacing: 0.02em;
     color: var(--primaryColorCornflower);
     width: 264px;
+    margin-right: 120px;
+}
+.footer_social{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+}
+.social_footer_item{
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        background-size: 40px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+}
+
+.footer_title_social{
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        margin-bottom: 16px;
 }
